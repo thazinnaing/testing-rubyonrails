@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
-    </head>
-    <body>
-        <h1>Welcome to example.com, <%= @user.name %></h1>
-        <p>
-            You have successfully signed up to example.com,
-            your user name is: <%= @user.login %>
-        </p>
-        <p>To login the site, just follow this link <%= @url %></p>
-        <p>Thanks for joining and have a great day!</p>
-    </body>
-</html>
+
+<h1>Welcome to example.com, <%= @user.name %></h1>
+<p>
+    You have successfully signed up to example.com,
+    your user name is: <%= @user.login %>
+</p>
+
+<p>Hello there, this is our image</p>
+
+
+<%= image_tag attachments['heart.avif'].url, alt: 'My Photo', width: 100, height: 100 %>
+
+<p>To login the site, just follow this link <%= @url %></p>
+<p>Thanks for joining and have a great day!</p>
