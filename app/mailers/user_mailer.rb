@@ -7,7 +7,7 @@ class UserMailer < ApplicationMailer
         attachments["heart.avif"] = File.read("app/assets/images/heart.avif")
         
         mail(
-            from: email_address_with_name("thazinnaing511@gmail.com","thazincode"),
+            from: email_address_with_name("thazinnaing511@gmail.com","sender"),
             to: email_address_with_name(@user.email, @user.name), 
             subject: "Welcome to my awesome site"
             )
